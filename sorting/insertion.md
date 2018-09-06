@@ -34,17 +34,17 @@ take the first ele of the unsorted collection, and add that into the sorted coll
 
 then just repet ya'self
 
-| A                                   |                                    |                                      |     |     |     |     |
-| ----------------------------------- | ---------------------------------- | ------------------------------------ | --- | --- | --- | --- |
-| <span style="color:blue"> 2 </span> | <span style="color:blue;">4</span> | <span style="color:white"> 3 </span> | 5   | 1   | 7   | 6   |
+| A                                   |                                    |                                                       |     |     |     |     |
+| ----------------------------------- | ---------------------------------- | ----------------------------------------------------- | --- | --- | --- | --- |
+| <span style="color:blue"> 2 </span> | <span style="color:blue;">4</span> | <span style="background:black;color:white"> 3 </span> | 5   | 1   | 7   | 6   |
 
 | A                                   |                                                     |                                     |     |     |     |     |
 | ----------------------------------- | --------------------------------------------------- | ----------------------------------- | --- | --- | --- | --- |
 | <span style="color:blue"> 2 </span> | <span style="background:black;color:black">3</span> | <span style="color:blue"> 4 </span> | 5   | 1   | 7   | 6   |
 
-| A                                   |                                   |                                     |     |     |     |     |
-| ----------------------------------- | --------------------------------- | ----------------------------------- | --- | --- | --- | --- |
-| <span style="color:blue"> 2 </span> | <span style="color:blue">3</span> | <span style="color:blue"> 4 </span> | 5   | 1   | 7   | 6   |
+| A                                   |                                    |                                     |     |     |     |     |
+| ----------------------------------- | ---------------------------------- | ----------------------------------- | --- | --- | --- | --- |
+| <span style="color:blue"> 2 </span> | <span style="color:white">3</span> | <span style="color:blue"> 4 </span> | 5   | 1   | 7   | 6   |
 
 # TMDR; worst time O(n^2)
 
