@@ -2,6 +2,14 @@
 
 we check if the middle item is what we’re looking for. If it’s not we check if it’s higher or lower. Depending on that we change the boundaries. If our item is lower, we set the end to be equal to the middle minus 1. If it’s higher then we set the start to be equal to the middle plus one. The middle is ignored because we already know that it’s not what we’re looking for. Then we recalculate the middle — start + end divided by 2 and rounded down and go again. We repeat this until we find our item or we reach a single item which is different than ours.
 
+# summary TMDR 
+* uppperBound, lowerBound, 
+* find mid with index from length
+* compare search value with `array[mid]`
+  * if `Arr[mid] > Value` update `upperBound`
+  * if `Arr[mid] < Value` update `lowerBound`
+
+# code
 ```
 function binarySearch(list, value) {
   // initial values for start, middle and end
