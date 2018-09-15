@@ -1,7 +1,6 @@
 ### You're now a baseball game point recorder.
 
 Given a list of strings, each string can be one of the 4 following types:
-
 1. Integer (one round's score):  
 Directly represents the number of points you get in this round.
 2. "+" (one round's score):  
