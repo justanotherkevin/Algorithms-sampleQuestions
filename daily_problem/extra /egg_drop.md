@@ -31,17 +31,17 @@ we could skip 10 floors each time. The worst case would again be floor 98 or 99,
 1. We want to skip as few floors as possible the first time we drop an egg, so if our first egg breaks right away we don't have a lot of floors to drop our second egg from.
 2. We always want to be able to reduce the number of floors we're skipping by one. We don't want to get towards the top and not be able to skip any floors any more.
 
-
 To be able to decrease the number of floors we skip by one every time we move up, and to minimize the number of floors we skip the first time, we want to end up skipping just one floor at the very top. Can we model this with an equation?
 
+**triangular series.**
 
- **triangular series.**
- ```
-   // n is 8
+```
+  // n is 8
 1, 2, 3, 4, 5, 6, 7, 8
 ```
+
 to find the sum:  
-Take the example above. Notice that if we add the first and last numbers together, and then add the second and second-to-last numbers together, they have the same sum! This happens with every pair of numbers until we reach the middle. If we add up all the pairs of numbers, we get:  
+Take the example above. Notice that if we add the first and last numbers together, and then add the second and second-to-last numbers together, they have the same sum! This happens with every pair of numbers until we reach the middle. If we add up all the pairs of numbers, we get:
 
 ```
   1 + 8 = 9
@@ -54,10 +54,10 @@ Take the example above. Notice that if we add the first and last numbers togethe
 sum = ( n + 1 ) * (n / 2)
 ```
 
-
-This triangular series ↴ reduces to n * (n+1) / 2 = 100n∗(n+1)/2=100 which solves to give n = 13.651n=13.651
+This triangular series ↴ reduces to n \* (n+1) / 2 = 100n∗(n+1)/2=100 which solves to give n = 13.651n=13.651
 
 For example:
+
 ```
   Highest floor an egg won't break from
 13
@@ -71,8 +71,8 @@ Floors we drop second egg from
 Total number of drops
 14
 ```
-```
 
+```
   Highest floor an egg won't break from
 98
 
