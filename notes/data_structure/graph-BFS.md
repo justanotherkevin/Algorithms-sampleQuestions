@@ -9,29 +9,48 @@ DFS is easy to implement recursively because you can use the call stack as the s
 ```
 //DFS
 Tree.prototype.traverse = function (callback) {
+  // using **stack**, FILO
   var stack=[this];
-  var n;
+  var workingNode;
 
   while(stack.length>0) {
 
-    n = stack.pop();
-    callback(n.value);
+    workingNode = stack.pop(); //take from back of queue
+    callback(workingNode.value);
 
-    if (!n.children) {
-      continue;
+    if (!workingNode.children) {
+      // at leaf node;  
     }
 
-    for (var i = n.children.length-1; i>=0; i--) {
-       stack.push(n.children[i]);
+    for (var i = workingNode.children.length-1; i>=0; i--) {
+       stack.push(workingNode.children[i]);
     }
   }
 };
+
+ex. 
+            8
+          /   \
+         1     2
+        / \   /  \
+      3    5 6    7
+
+iteration | stack 
+0           [8]
+1           [1,2]
+2           [1,6,7]
+3           [1,6]
+4           [1]
+5           [3,5]
+6           [3]
+  
 ```
 ```
 And now BFS
 
 //BFS
 Tree.prototype.traverse = function (callback) {
+  // using **queue**, LIFO
   var queue=[this];
   var n;
 
@@ -55,9 +74,18 @@ ___
 
 
 
-Advantages:
+**BFS Advantages:**
 
 A BFS will find the shortest path between the starting point and any other reachable node. A depth-first search will not necessarily find the shortest path.
 Disadvantages
 
 A BFS on a binary tree generally requires more memory than a DFS.
+___
+
+**DFS Advantages:**
+
+Depth-first search on a binary tree generally requires less memory than breadth-first.
+Depth-first search can be easily implemented with recursion.
+Disadvantages
+
+A DFS doesn't necessarily find the shortest path to a node, while breadth-first search does.
