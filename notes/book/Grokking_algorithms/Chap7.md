@@ -36,3 +36,17 @@ node = find_lowest_cost_node(costs) Find the next node to process, and loop.
 ```
 
 That’s Dijkstra’s algorithm in Python! I’ll show you the code for the function later. First, let’s see this find_lowest_cost_node algorithm code in action.
+
+
+## dijkstras algorithm
+
+```
+          A
+      6 / |  \ 1
+      /   |   \
+start    3|     fin
+      \   |   /
+      2 \ |  / 5
+          B
+```
+to make this graph:

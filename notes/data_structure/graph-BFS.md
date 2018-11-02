@@ -45,10 +45,11 @@ iteration | stack
 6           [3]
   
 ```
+--- 
+**And now BFS**
+--- 
 ```
-And now BFS
 
-//BFS
 Tree.prototype.traverse = function (callback) {
   // using **queue**, LIFO
   var queue=[this];
@@ -74,18 +75,21 @@ ___
 
 
 
-**BFS Advantages:**
+**BFS**  
+**Advantages:**
 
-A BFS will find the shortest path between the starting point and any other reachable node. A depth-first search will not necessarily find the shortest path.
-Disadvantages
+- A BFS will find the **shortest path** between the starting point and any other reachable node. A depth-first search will not necessarily find the shortest path.
 
-A BFS on a binary tree generally requires more memory than a DFS.
+**Disadvantages**
+
+- A BFS on a binary tree generally requires more memory than a DFS.
 ___
 
-**DFS Advantages:**
+**DFS**  
+**Advantages:**
 
-Depth-first search on a binary tree generally requires less memory than breadth-first.
-Depth-first search can be easily implemented with recursion.
+- Depth-first search on a binary tree generally requires less memory than breadth-first.
+- Depth-first search can be easily implemented with recursion.
 Disadvantages
 
 A DFS doesn't necessarily find the shortest path to a node, while breadth-first search does.
