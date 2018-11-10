@@ -1,3 +1,6 @@
+https://www.toptal.com/developers/sorting-algorithms
+
+
 | A   |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- | --- |
 | 4   | 2   | 3   | 5   | 1   | 7   | 6   |
