@@ -25,3 +25,15 @@ function LetterCapitalize(str) {
   });
 
 }
+
+import React, { Component } from 'react'
+
+export default class answer extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+}
