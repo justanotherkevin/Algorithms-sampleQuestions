@@ -65,9 +65,3 @@ function quickSort(items, left, right) {
 }
 
 console.log( quickSort(example) );
-
-// [5,4,2,1,4,5,7,8] , 0 , 7 
-
-// 0 to 7  
-
-
