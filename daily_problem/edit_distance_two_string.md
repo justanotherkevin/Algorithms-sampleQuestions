@@ -10,7 +10,7 @@ Given two strings, compute the edit distance between them.
 # insertions, deletions, and substitutions 
 
 test1 = '00abc'
-test2= 'abc000'
+test2 = 'abc000'
 
 def numEditAway ( str1, str2):
   # find lognest common str, postiiton, add to begin/end ==> same length 
